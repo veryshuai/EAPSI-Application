@@ -51,11 +51,7 @@ Measuring conspicuous consumption is important for several reasons.  Conspicuous
 
 Estimating conspicuous consumption in a developing country may also provide insight into the strange consumption habits of the very poor.  As mentioned in the introduction, \citet{BanerjeeDuflo2007} describe the poorest of the poor in India spending a large proportion of their household budgets on festivals, alcohol, and cigarettes.  A large estimate of the importance of conspicuous consumption in China would lend support to the hypothesis that the poor are overconsuming relatively visible festival and recreational spending as a signal of their wealth.  In this case, there may be substantial scope for increasing the welfare of the very poor with careful policy limiting conspicuous consumption spending.      
 
-\bibliographystyle{plainnat.bst}
-\bibliography{biglist.bib}
-
-\appendix
-\section{Formal Model}
+\section*{Appendix: Formal Model}
 Consider a continuum of agents of wealth type $w\in[\underbar{w},\overline{w}]$ with distribution $h$.  Let agents have access to goods in the set $I$, $\|I\|<\infty$, with exogenously given prices $\{p_i\}_I$.  In this set up, agents first buy goods, and then society observes a noisy signal of each agent's purchased bundle.  Let the optimal consumption bundle for an agent of type $w$ be given by the vector valued function $g:[\underbar{w},\overline{w}]\rightarrow \mathbb{R}_+^{\|I\|}$, $g\in\Gamma$. Let an agent's fundamental utility, i.e. the utility he gets directly from consuming a bundle of goods, be given by $u:\mathbb{R}_+^{\|I\|}\rightarrow \mathbb{R}$.  Let $\alpha$ be the weight of conspicuous consumption, and let $B:\mathbb{R}_+^{\|I\|}\times \Gamma \rightarrow [\underbar{w},\overline{w}]$ give society's expectation of agents utility based on the noisy observation.  Note that all the action here is on the side of the agent--society just forms a belief in a mechanical way.  Suppose that society observes agents true consumption of good $i\in I$ plus $\epsilon_i \sim N(0,\sigma_i^2)$.  Denoting good $i$'s probability distribution function by $f_i$, we can now write societies belief function as:
 \begin{equation}
  B(X,g) = \int u(g(w)) \Pi_i f_i(X_i - g_i(w)) h(w) dw, 
@@ -69,4 +65,10 @@ This expression can by further simplified using properties of the normal distrib
  U(C) = (1-\alpha) u(C) + \alpha \int u(g(w)) h(w) \Pi_i f_i^*(C_i-g_i(w)) dw,
 \end{equation}
 where $f_i^*$ is the normal probability density function with mean zero and variance $2\sigma_i^2$.
+
+\pagebreak
+
+\bibliographystyle{plainnat.bst}
+\bibliography{biglist.bib}
+
 \end{document}
